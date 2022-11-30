@@ -1,10 +1,8 @@
-import styles from './navigation.module.scss';
-import Link from '../elements/link/Link';
-import Instagram from '../../assets/images/instagram.png';
 import { useEffect } from 'react';
-import './nav.css';
-import Burger from './Burger';
-import { LinkTypes } from 'types/Link';
+import Burger from '../elements/Burger';
+import '../styles/components/navigations.scss';
+import '../styles/elements/link.scss';
+import Instagram from '../assets/images/instagram.png';
 
 const Navigation = () => {
   // Sticky Menu Area
@@ -17,7 +15,7 @@ const Navigation = () => {
 
   /* Method that will fix header after a specific scrollable */
   const isSticky = (e) => {
-    const header = document.querySelector('.header-section');
+    const header = document.querySelector('.header_section');
     const banner = document.querySelector('#sec-1');
     const scrollTop = window.scrollY;
     scrollTop >= 250
@@ -29,37 +27,47 @@ const Navigation = () => {
   };
 
   return (
-    <section className="header-section">
-      <div className={styles.container}>
-        <div className={styles.nav_block}>
+    <nav className="header_section">
+      <div className="nav_container">
+        <div className="nav_block">
           {/* Nav */}
-          <div className={styles.navigation}>
-            <Link text="Home" href="#sec-1" />
-            <Link text="Aboute Us" href="#sec-2" />
-            <Link text="Our Menu" href="#sec-3" />
-            <Link text="Pages" href="#sec-4" />
-            <Link text="Blog" href="#sec-5" />
+          <div className="navigation">
+            <a href="#sec-1" className="link">
+              Home
+            </a>
+            <a href="#sec-2" className="link">
+              Aboute Us
+            </a>
+            <a href="#sec-3" className="link">
+              Our Menu
+            </a>
+            <a href="#sec-4" className="link">
+              Pages
+            </a>
+            <a href="#sec-5" className="link">
+              Blog
+            </a>
           </div>
           {/* Icons */}
-          <div className={styles.icons}>
-            <div className={styles.icon}>
-              <img src={Instagram} alt="intagramm" />
+          <div className="icons">
+            <div className="icon">
+              <a href="https://www.instagram.com/kava_s_molokom_2022/?igshid=YmMyMTA2M2Y%3D">
+                <img src={Instagram} alt="intagramm" />
+              </a>
             </div>
-            <div className={styles.numbers}>
-              <Link
-                text="+380984956069"
-                href="tel:+380984956069"
-                type={LinkTypes.WHITE}
-              />
+            <div className="numbers">
+              <a href="tel:+380984956069" className="link">
+                +380984956069
+              </a>
             </div>
           </div>
           {/* Burger */}
-          <div className={styles.burger}>
-            <Burger></Burger>
+          <div className="burger">
+            <Burger />
           </div>
         </div>
       </div>
-    </section>
+    </nav>
   );
 };
 

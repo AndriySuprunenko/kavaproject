@@ -1,4 +1,4 @@
-@import '../../styles/variables.scss';
+@import '../variables';
 
 .header {
   background-color: $c-default;
@@ -17,16 +17,16 @@
   }
 }
 
-.logo_container {
+.containerh {
   display: flex;
   // justify-content: center;
   align-items: center;
+  padding: 20px 40px;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 20px 40px;
   @media screen and (max-width: $tablet) {
-    display: flex;
     flex-direction: column;
+    display: flex;
     padding: 20px;
   }
 }

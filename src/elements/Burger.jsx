@@ -1,7 +1,6 @@
-import Link from 'elements/link/Link';
 import { useEffect } from 'react';
-import styles from './burger.module.scss';
-import './nav.css';
+import '../styles/elements/burger.scss';
+import '../styles/components/navigations.scss';
 
 const Burger = () => {
   useEffect(() => {
@@ -32,21 +31,31 @@ const Burger = () => {
         </div>
       </div>
       <div className="popup" id="popup">
-        <div className={styles.menu__link}>
-          <div className={styles.link}>
-            <Link text="Home" href="#sec-2" />
+        <div className="menu__link">
+          <div className="link-block">
+            <a href="#sec-1" className="link">
+              Home
+            </a>
           </div>
-          <div className={styles.link}>
-            <Link text="Aboute Us" href="#sec-2" />
+          <div className="link-block">
+            <a href="#sec-2" className="link">
+              Aboute Us
+            </a>
           </div>
-          <div className={styles.link}>
-            <Link text="Our Menu" href="#sec-3" />
+          <div className="link-block">
+            <a href="#sec-3" className="link">
+              Our Menu
+            </a>
           </div>
-          <div className={styles.link}>
-            <Link text="Pages" href="#sec-4" />
+          <div className="link-block">
+            <a href="#sec-4" className="link">
+              Pages
+            </a>
           </div>
-          <div className={styles.link}>
-            <Link text="Blog" href="#sec-5" />
+          <div className="link-block">
+            <a href="#sec-5" className="link">
+              Blog
+            </a>
           </div>
         </div>
       </div>

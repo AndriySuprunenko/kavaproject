@@ -1,19 +1,18 @@
 // Imports
-import styles from './header.module.scss';
+import '../styles/components/header.scss';
 import Logo from '../../assets/images/LOGO.png';
 
-// Header
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <header className="header">
       {/* Logo */}
-      <div className={styles.logo_container}>
-        <div className={styles.header__logo}>
+      <div className="containerh">
+        <div className="header__logo">
           <img src={Logo} alt="logo" />
         </div>
       </div>
       {/* Line */}
-      <hr size="2" noshade className={styles.header__line} />
+      <hr className="header__line" />
     </header>
   );
 };

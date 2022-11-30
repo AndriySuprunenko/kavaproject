@@ -1,19 +1,97 @@
-@import '../../styles/variables';
+@import '../variables';
+// Fixed and burger
+.is-sticky {
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 
 .container {
-  background-color: $c-default;
+  margin: auto;
+  display: flex;
+  max-width: 1440px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.vidstup {
+  margin-top: 89px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hamb {
+  display: flex;
+  align-items: center;
+}
+
+.hamb__field {
+  z-index: 999;
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  display: block;
+  margin: 5px auto;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup {
+  top: 0px;
+  width: 100%;
+  right: -100%;
+  z-index: 998;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(41, 46, 54, 1);
+}
+
+.popup.open {
+  right: 0;
+}
+
+.hamb__field.open span:first-of-type {
+  transform: rotate(45deg) translate(10px, 4px);
+}
+
+.hamb__field.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamb__field.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -1px);
+}
+
+// Navigation style
+.nav_container {
   position: sticky;
+  background-color: $c-default;
 }
 
 .nav_block {
-  max-width: 1440px;
-  background-color: $c-default;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: auto;
-  padding: 25px 40px;
+  display: flex;
   position: static;
+  max-width: 1440px;
+  padding: 25px 40px;
+  align-items: center;
+  background-color: $c-default;
+  justify-content: space-between;
   @media screen and (max-width: $desktop) {
     padding: 20px;
   }
@@ -27,8 +105,8 @@
 }
 
 .icons {
-  display: flex;
   width: 100%;
+  display: flex;
   justify-content: flex-end;
   @media screen and (max-width: $desktop) {
     justify-content: flex-start;
@@ -57,8 +135,8 @@
 }
 
 .burger {
-  width: fit-content;
   display: none;
+  width: fit-content;
   @media screen and (max-width: $desktop) {
     display: block;
   }
