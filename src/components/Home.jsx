@@ -3,9 +3,9 @@ import '../styles/components/home.scss';
 import Maps from '../elements/Maps';
 import Locale from '../assets/images/locale.png';
 import Time from '../assets/images/time.png';
-import Reservation from '../assets/images/reservation.png';
+// import Reservation from '../assets/images/reservation.png';
 // import Cart from '../assets/images/cart-1.png';
-import Signature from '../assets/images/signature.png';
+// import Signature from '../assets/images/signature.png';
 
 const Home = () => {
   return (
@@ -35,7 +35,7 @@ const Home = () => {
           </div>
         </div>
         {/* Block */}
-        <div className="aboute_us__block">
+        {/* <div className="aboute_us__block">
           <div className="aboute_us__img">
             <img src={Reservation} alt="reservation" />
           </div>
@@ -43,15 +43,15 @@ const Home = () => {
             <div className="aboute_us__title">Reservation</div>
             <div className="aboute_us__text">restaurantate@gmail.com</div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Home Block */}
       <div className="home__block">
         <div className="home__image">
-          <Maps></Maps>
+          <Maps />
         </div>
-        <div className="home__texts">
+        {/* <div className="home__texts">
           <div className="home__texts_title">The Delicious Story</div>
           <div className="home__texts_text">
             The people, food and the prime locations make the perfect place for
@@ -77,7 +77,7 @@ const Home = () => {
               <img src={Signature} alt="signature" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
