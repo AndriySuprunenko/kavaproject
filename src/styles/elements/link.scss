@@ -1,0 +1,26 @@
+@import '../variables';
+
+.link {
+  color: $c-white;
+  font-size: $fs-text;
+  text-decoration: none;
+  &:hover {
+    color: $c-gold;
+  }
+  &__gold {
+    color: $c-gold;
+  }
+  &__button_black {
+    padding: 20px;
+    color: $c-gold;
+    cursor: pointer;
+    font-size: $fs-button;
+    text-decoration: none;
+    border: 2px solid $c-gold;
+    background-color: $c-default;
+    @media screen and (max-width: $desktop) {
+      padding: 10px;
+      font-size: $fs-base;
+    }
+  }
+}

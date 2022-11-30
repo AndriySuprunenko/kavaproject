@@ -1,5 +1,5 @@
 // Import
-import Baner from '../../assets/images/banner.png';
+import Baner from '../assets/images/banner.png';
 
 // Scss
 import '../styles/components/banner.scss';

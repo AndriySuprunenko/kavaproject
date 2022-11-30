@@ -1,6 +1,6 @@
 // Imports
 import '../styles/components/header.scss';
-import Logo from '../../assets/images/LOGO.png';
+import Logo from '../assets/images/LOGO.png';
 
 const Header = () => {
   return (

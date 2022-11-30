@@ -1,10 +1,11 @@
 // Imports
 import '../styles/components/home.scss';
-import Locale from '../../assets/images/locale.png';
-import Time from '../../assets/images/time.png';
-import Reservation from '../../assets/images/reservation.png';
-// import Cart from '../../assets/images/cart-1.png';
-import Signature from '../../assets/images/signature.png';
+import Maps from '../elements/Maps';
+import Locale from '../assets/images/locale.png';
+import Time from '../assets/images/time.png';
+import Reservation from '../assets/images/reservation.png';
+// import Cart from '../assets/images/cart-1.png';
+import Signature from '../assets/images/signature.png';
 
 const Home = () => {
   return (

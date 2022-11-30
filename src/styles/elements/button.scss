@@ -1,0 +1,90 @@
+@import '../variables';
+
+.button {
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 50px;
+  font-size: $fs-button;
+  &:active {
+    background-color: $c-yellow;
+  }
+  @media screen and (max-width: $desktop) {
+    padding: 10px;
+    font-size: $fs-base;
+  }
+  &__black {
+    color: $c-white;
+    border: 2px solid $c-gold;
+    background-color: $c-default;
+    &:hover {
+      margin: 3px;
+      padding: 17px;
+      background-color: $c-default-transparent;
+      @media screen and (max-width: $desktop) {
+        margin: 3px;
+        padding: 7px;
+        font-size: $fs-base;
+      }
+    }
+  }
+  &__gold {
+    color: $c-default;
+    border: 2px solid $c-gold;
+    background-color: $c-gold;
+    &:hover {
+      margin: 3px;
+      padding: 17px;
+      background-color: $c-gold-transparent;
+      @media screen and (max-width: $desktop) {
+        margin: 3px;
+        padding: 7px;
+        font-size: $fs-base;
+      }
+    }
+  }
+  &__white_gold {
+    color: $c-gold;
+    border: 2px solid $c-gold;
+    background-color: $c-white;
+    &:hover {
+      margin: 3px;
+      padding: 17px;
+      background-color: $c-white-transparent;
+      @media screen and (max-width: $desktop) {
+        margin: 3px;
+        padding: 7px;
+        font-size: $fs-base;
+      }
+    }
+  }
+  &__white_black {
+    color: $c-black;
+    background-color: $c-white;
+    border: 2px solid $c-white;
+    &:hover {
+      margin: 3px;
+      padding: 17px;
+      background-color: $c-white-transparent;
+      @media screen and (max-width: $desktop) {
+        margin: 3px;
+        padding: 7px;
+        font-size: $fs-base;
+      }
+    }
+  }
+  &__black_gold {
+    color: $c-gold;
+    border: 2px solid $c-gold;
+    background-color: $c-default;
+    &:hover {
+      margin: 3px;
+      padding: 17px;
+      background-color: $c-default-transparent;
+      @media screen and (max-width: $desktop) {
+        margin: 3px;
+        padding: 7px;
+        font-size: $fs-base;
+      }
+    }
+  }
+}
