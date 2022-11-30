@@ -7,7 +7,7 @@ import Icon2 from '../../assets/images/cart-5.png';
 import Icon3 from '../../assets/images/cart-6.png';
 import Icon4 from '../../assets/images/cart-7.png';
 import Button from 'elements/button/Button';
-import { ButtonTypes } from '../../types/Button';
+import { ButtonTypes } from '../types/Button';
 const Offers = () => {
   return (
     <section className={styles.wrapper}>

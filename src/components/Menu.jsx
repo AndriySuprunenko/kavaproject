@@ -1,7 +1,7 @@
 // Imports
-import Button from '../../elements/button/Button';
+import Button from '../elements/button/Button';
 import styles from './menu.module.scss';
-import { ButtonTypes } from '../../types/Button';
+import { ButtonTypes } from '../types/Button';
 import Cart_2 from '../../assets/images/cart-2.png';
 import Menu_1 from '../../assets/images/menu-1.png';
 import Menu_2 from '../../assets/images/menu-2.png';

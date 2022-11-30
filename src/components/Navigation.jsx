@@ -1,5 +1,5 @@
 import styles from './navigation.module.scss';
-import Link from '../../elements/link/Link';
+import Link from '../elements/link/Link';
 import Instagram from '../../assets/images/instagram.png';
 import { useEffect } from 'react';
 import './nav.css';

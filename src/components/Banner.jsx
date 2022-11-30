@@ -1,8 +1,8 @@
 // Import
 import Baner from '../../assets/images/banner.png';
-import Button from '../../elements/button/Button';
+import Button from '../elements/button/Button';
 import Decor from '../../assets/images/decor.png';
-import { ButtonTypes } from '../../types/Button';
+import { ButtonTypes } from '../types/Button';
 import styles from './banner.module.scss';
 // Scss
 import '../header/nav.css';

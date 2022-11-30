@@ -1,8 +1,8 @@
 // Imports
-import Navigation from './components/header/Navigation';
-import Banner from './components/banner/Banner';
-import Header from './components/header/Header';
-import Home from './components/home/Home';
+import Navigation from './components/Navigation';
+import Banner from './components/Banner';
+import Header from './components/Header';
+import Home from './components/Home';
 // Scss
 import './styles/index.scss';
 
