@@ -1,0 +1,77 @@
+/* @import '../../styles/variables'; */
+.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.vidstup {
+  margin-top: 89px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.hamb {
+  display: flex;
+  align-items: center;
+}
+
+.hamb__field {
+  cursor: pointer;
+  padding: 10px 20px;
+  z-index: 999;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup {
+  position: fixed;
+  top: 0px;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(41, 46, 54, 1);
+  z-index: 998;
+  display: flex;
+  transition: all 0.5s ease-in-out;
+}
+
+.popup.open {
+  right: 0;
+}
+
+.hamb__field.open span:first-of-type {
+  transform: rotate(45deg) translate(10px, 4px);
+}
+
+.hamb__field.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamb__field.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -1px);
+}

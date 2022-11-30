@@ -1,0 +1,127 @@
+@import '../../styles/variables';
+.home {
+  display: flex;
+  flex-direction: column;
+  background-color: $c-home-bc;
+  padding: 100px 40px 60px 40px;
+  @media screen and (max-width: $desktop) {
+    padding: 40px;
+  }
+  @media screen and (max-width: $phone) {
+    padding: 20px;
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 85px 40px 125px 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+    @media screen and (max-width: $desktop) {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: fit-content;
+      padding-top: 40px;
+      padding-bottom: 0;
+    }
+    @media screen and (max-width: $phone) {
+      padding: 20px 0 20px 0;
+    }
+  }
+  &__image {
+    max-width: 745px;
+    margin-right: 20px;
+    @media screen and (max-width: $desktop) {
+      margin-right: 0;
+      margin: 0;
+    }
+  }
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 570px;
+    @media screen and (max-width: $desktop) {
+      margin-top: 40px;
+    }
+    &_blocks {
+      display: flex;
+    }
+    &_block {
+      display: flex;
+      flex-direction: column;
+      margin-right: 15px;
+    }
+    &_title {
+      color: $c-default;
+      font-size: $fs-home-title;
+    }
+    &_text {
+      color: $c-default;
+      font-size: $fs-text;
+      margin-top: 15px;
+    }
+    &_name {
+      color: $c-default;
+      font-size: $fs-text;
+    }
+    &_img {
+      margin-top: 20px;
+    }
+    &_image {
+      max-width: 200px;
+      margin-top: 15px;
+    }
+  }
+}
+
+.aboute_us {
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  @media screen and (max-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $desktop) {
+      margin-top: 20px;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  &__img {
+    max-width: 85px;
+    max-height: 85px;
+    margin-right: 20px;
+    @media screen and (max-width: $phone) {
+      max-width: 55px;
+      max-height: 55px;
+      margin-right: 10px;
+    }
+  }
+  &__data {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: $fs-subtitle;
+    color: $c-default;
+    @media screen and (max-width: $phone) {
+      font-size: $fs-button;
+      color: $c-default;
+    }
+  }
+  &__text {
+    font-size: $fs-text;
+    color: $c-default;
+    @media screen and (max-width: $phone) {
+      font-size: $fs-base;
+      color: $c-default;
+    }
+  }
+}
