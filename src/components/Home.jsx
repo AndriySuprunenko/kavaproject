@@ -49,7 +49,7 @@ const Home = () => {
       {/* Home Block */}
       <div className="home__block">
         <div className="home__image">
-          <Maps />
+          <Maps></Maps>
         </div>
         <div className="home__texts">
           <div className="home__texts_title">The Delicious Story</div>

@@ -1,30 +1,32 @@
-import GoogleMapReact from 'google-map-react';
+// Imports
+import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
+// Scss
+import '../styles/elements/maps.scss';
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+export default function Maps() {
+  const { isLoaded } = useLoadScript({
+    googleMapsApiKey: 'AIzaSyAfjuzb4n_KmqjdUvP8PafvgON2bUamlmI',
+  });
 
-export default function SimpleMap(){
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627,
-    },
-    zoom: 11
-  };
+  if (!isLoaded) return <div>Loading...</div>;
+  return <Map />;
+}
 
+function Map() {
   return (
-    // Important! Always set the container height explicitly
-    <div style={{ height: '100vh', width: '100%' }}>
-      <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyBnr2KZQHG2oEO-TmluyaOIdFWmmI8jaNQ" }}
-        defaultCenter={defaultProps.center}
-        defaultZoom={defaultProps.zoom}
-      >
-        <AnyReactComponent
-          lat={59.955413}
-          lng={30.337844}
-          text="My Marker"
-        />
-      </GoogleMapReact>
-    </div>
+    <GoogleMap
+      zoom={18}
+      center={{ lat: 49.066548193739635, lng: 33.42403396608896 }}
+      mapContainerClassName="map-container"
+    >
+      <Marker position={{ lat: 49.066548193739635, lng: 33.42403396608896 }} />
+    </GoogleMap>
   );
 }
+
+// https://maps.gooleapis.com/maps/api/js?key=AIzaSyBbt0F3RGczTmbyVMMyFIVd8wxxFSpFRN0&region=EN&language=en&callback=initMap&v=weekly
+// center: {
+//   lat: 49.066548193739635,
+//   lng: 33.42403396608896,
+// },
+// zoom: 11,
